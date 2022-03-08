@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+ <style>
+ .example-divider {
+                    height: 3rem;
+                    background-color: rgba(0, 0, 0, .1);
+                    border: solid rgba(0, 0, 0, .15);
+                    border-width: 1px 0;
+                    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+                  }
+ </style>
+{% endblock %}
+{% block content %}
+
+<div class="example-divider"></div>
+{% include 'heroes/centered-hero.html' %}
+<div class="example-divider"></div>
+{% include 'heroes/centered-screenshot.html' %}
+<div class="example-divider"></div>
+{% include 'heroes/responsive-left.html' %}
+<div class="example-divider"></div>
+{% include 'heroes/responsive-right-signup.html' %}
+<div class="example-divider"></div>
+{% include 'heroes/border-hero.html' %}
+<div class="example-divider"></div>
+{% include 'heroes/centered-darkmode.html' %}
+<div class="example-divider"></div>
+
+
+
+{% endblock %}

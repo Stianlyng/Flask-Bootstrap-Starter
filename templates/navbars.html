@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+<style>
+ .example-divider {
+                    height: 2rem;
+                    background-color: rgba(0, 0, 0, .1);
+                    border: solid rgba(0, 0, 0, .15);
+                    border-width: 1px 0;
+                    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+                  }
+ </style>
+{% endblock %}
+{% block content %}
+
+<!--------- DYNAMIC ONES --------->
+ <!--- {% include 'nav-bars/navbar-bottom.html' %} --->
+ <!--- {% include 'nav-bars/navbar-fixed.html' %} --->
+ <!--- {% include 'nav-bars/navbar-static.html' %} --->
+
+
+
+{% include 'nav-bars/never-expand.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/always-expand.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/expand-sm.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/expand-md.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/expand-lg.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/expand-xl.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/expand-xxl.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/navbar-container.html' %}
+<div class="example-divider"></div>
+{% include 'nav-bars/navbar-container-xl.html' %}
+<div class="example-divider"></div>
+
+
+{% endblock %}
