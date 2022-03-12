@@ -1,80 +1,15 @@
 {% extends "base.html" %}
-{% block title %}Index{% endblock %}
+{% block title %}{% endblock %}
 {% block head %}
   {{ super() }}
- <style>
- .example-divider {
-                    height: 3rem;
-                    background-color: rgba(0, 0, 0, .1);
-                    border: solid rgba(0, 0, 0, .15);
-                    border-width: 1px 0;
-                    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-                  }
 
 
- .feature-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 4rem;
-  height: 4rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-  color: #fff;
-  border-radius: .75rem;
-}
-
-.icon-link {
-  display: inline-flex;
-  align-items: center;
-}
-.icon-link > .bi {
-  margin-top: .125rem;
-  margin-left: .125rem;
-  transition: transform .25s ease-in-out;
-  fill: currentColor;
-}
-.icon-link:hover > .bi {
-  transform: translate(.25rem);
-}
-
-.icon-square {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.5rem;
-  border-radius: .75rem;
-}
-
-.rounded-4 { border-radius: .5rem; }
-.rounded-5 { border-radius: 1rem; }
-
-.text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
-.text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
-.text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
-
-.card-cover {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
- </style>
 {% endblock %}
 {% block content %}
 
-{% include 'features/columns-with-icons.html' %}
-<div class="example-divider"></div>
-{% include 'features/hanging-icons.html' %}
-<div class="example-divider"></div>
-{% include 'features/custom-cards.html' %}
-<div class="example-divider"></div>
-{% include 'features/icon-grid.html' %}
-<div class="example-divider"></div>
-
-
-<!----- SVG FOR EXAMPLES REMOVE IF NO NEED FOR ICONS --->
+<div class="sidebar-html">
+<div class="sidebar-body">
+<div class="sidebar-main">
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
   <symbol id="bootstrap" viewBox="0 0 118 94">
@@ -137,5 +72,19 @@
 
 
 
+{% include 'sidebars/sidebar-1.html' %}
+<div class="b-example-divider"></div>
+{% include 'sidebars/sidebar-2.html' %}
+<div class="b-example-divider"></div>
+  {% include 'sidebars/sidebar-3.html' %}
+<div class="b-example-divider"></div>
+  {% include 'sidebars/sidebar-4.html' %}
+<div class="b-example-divider"></div>
+  {% include 'sidebars/sidebar-5.html' %}
+<div class="b-example-divider"></div>
 
+
+</div>
+  </div>
+  </div>
 {% endblock %}

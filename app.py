@@ -29,5 +29,17 @@ def footers():
 def features():
     return render_template('features.html')
 
+@app.route('/sidebars')
+def sidebars():
+    return render_template('sidebars.html')
+
+@app.route('/dropdowns')
+def dropdowns():
+    return render_template('dropdowns.html')
+
+@app.route('/components')
+def components():
+    return render_template('components.html')
+
 if __name__ == '__main__':
     app.run()
